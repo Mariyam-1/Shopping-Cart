@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="myscript.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My Shop</h1>
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <div id="filters">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="low">Below $50</option>
+        <option value="mid">$50 - $100</option>
+        <option value="high">Above $100</option>
+      </select>
+    </div>
+    <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <div id="productsContainer" class="grid"></div>
+  </main>
+
+  <div id="cartSidebar">
+    <button class="cart-close-btn">&times;</button>
+    <h2>Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <div id="cartSummary">
+      <p>Total Items: <span id="totalItems">0</span></p>
+      <p>Total Price: $<span id="totalPrice">0.00</span></p>
+    </div>
+  </div>
+
+
+  <div id="productDetailModal" class="hidden">
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <h2 id="detailTitle"></h2>
+      <div class="modal-image-container">
+        <img id="detailImage" alt="Product Image">
+      </div>
+      <p id="detailDescription"></p>
+      <p id="detailPrice"></p>
+    </div>
+  </div>
+  </div>
+
+  
+</body>
+</html>
