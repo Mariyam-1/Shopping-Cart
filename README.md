@@ -1,6 +1,7 @@
 # 🛒 Modern Shopping Cart
 
-![Project Screenshot](screenshot.png) *Replace with actual screenshot*
+![Screenshot 2025-04-27 213148](https://github.com/user-attachments/assets/c5f2bb5a-3f01-4e0d-9d49-f8834db557d2)
+
 
 ## 📋 Project Description
 
